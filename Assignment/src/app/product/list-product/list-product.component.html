@@ -1,0 +1,28 @@
+<div class="col-md-6 product-container">
+  <h2 style="margin: auto"> Product Details</h2>
+  <button class="btn btn-primary" style="width:125px" (click)="addProduct()"> Add Product</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products" (click)="editProduct(product)">
+      <td class="hidden">{{product.product_id}}</td>
+      <td>{{product.product_name}}</td>
+      <td>{{product.product_price}}</td>
+      <td>{{product.product_quantity}}</td>
+      
+      <td style="width: 170px"><button class="btn btn-success" (click)="deleteProduct(product,$event)"> Delete</button>
+        <button class="btn btn-success" (click)="editProduct(product,$event)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+

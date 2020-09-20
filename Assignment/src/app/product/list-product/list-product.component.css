@@ -1,0 +1,15 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+  margin: 3em;
+  max-width: 90%;
+}
+tbody{
+  cursor: pointer;
+}
+.hidden{
+  display: none;
+}
