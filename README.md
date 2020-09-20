@@ -6,6 +6,7 @@ Angular
 1. cd Assignment
 2. npm install
 3. npm start
+4. username: debasmita, password: 12345
 
 Node
 1. cd ASsignment_node
