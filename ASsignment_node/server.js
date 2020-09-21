@@ -28,7 +28,8 @@ const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'assign_db'
+    database: 'assign_db',
+    insecureAuth : true
 });
 
 //connect to database
